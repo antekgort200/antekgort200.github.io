@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>~~(8:></title>
+		<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+
+		 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
+		 <link rel="stylesheet" href="https://fonts.google.com/specimen/VT323?query=2">
+		<style>
+			
+			body{
+				font-family: "Abel";
+				background-color: rgb(0,0,0);
+				color: rgb(0,255,0);
+			}
+			@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #00ff00;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+	background-color:rgb(0,0,0);
+    overflow: hidden;
+    margin-right: 50px;
+    border: none ;
+   
+}
+button:hover{
+    background: #00ff00;
+    color: #050801;
+    box-shadow: 0 0 5px #00ff00,
+                0 0 25px #00ff00,
+                0 0 50px #00ff00,
+                0 0 200px #00ff00;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+button:nth-child(1){
+    filter: hue-rotate(270deg);
+}
+button:nth-child(2){
+    filter: hue-rotate(110deg);
+}
+button span{
+    position: absolute;
+    display: block;
+}
+button span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#00ff00);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+button span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#00ff00);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+button span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#00ff00);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+button span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#00ff00);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+		</style>
+	</head>
+	<body>
+				
+		
+		<h1>Hellooo traveler</h1>
+		<p>And welcome to my website BTW.</p>
+		 <audio controls>
+  <source src="muz.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+		 </audio><br>
+		<button id="btn" onclick="start()">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Press me
+    </button>
+		<h3 id="click" onclick="time()" style="font-family:vt323;">about</h3>
+		<hr style="color:lime;">
+		<h2>About me</h2>
+		<p>So im a guy under 18. I like computer like shit and photography.I made few github repos mostly test or things i discontinued. I like GNU/Linux use it as daily driver for my PC.I like web dev, know how to setup http server, scrap sites for data and as you can see make websites.<br>
+My prefered type of music is electronic but i like many generes, taste mostly influenced by games like Ghostrunner and Hotline Maiami 1 and 2. I own a dog, breed Shiba Inu named "Airi", name is female but dog is male it was assinged so it stayed.  
+		</p>
+		<p id="gfg"></p>
+		<script type="text/javascript" src="skrypt.js"></script>
+		
+			
+	</body>
+</html>
